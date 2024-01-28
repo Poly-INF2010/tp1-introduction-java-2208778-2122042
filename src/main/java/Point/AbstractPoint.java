@@ -10,7 +10,7 @@ public abstract class AbstractPoint implements Comparable<AbstractPoint> {
         this.vector = Arrays.stream(vector).boxed().toArray(Double[]::new);
     }
 
-    public abstract AbstractPoint translate(Double[] translateVector);
+    public abstract AbstractPoint translate(Point2d point2d, Double[] translateVector);
     public abstract AbstractPoint rotate(Double[][] rotationMatrix);
     public abstract AbstractPoint divide(Double divider);
     public abstract AbstractPoint multiply(Double multiplier);
